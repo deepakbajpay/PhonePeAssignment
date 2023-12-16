@@ -1,0 +1,6 @@
+com.nobroker.myapplication.test.app-annotation-experimental-1.3.0-0 /Users/nobroker-mac110/.gradle/caches/transforms-3/bf48e9e233ba9f917f9f21918f9bf68f/transformed/annotation-experimental-1.3.0/res
+com.nobroker.myapplication.test.app-core-1.5.0-1 /Users/nobroker-mac110/.gradle/caches/transforms-3/d4b9dac4060498c2b8359a74e2ac6a81/transformed/core-1.5.0/res
+com.nobroker.myapplication.test.app-androidTest-2 /Users/nobroker-mac110/AndroidStudioProjects/MyApplication5/app/build/generated/res/resValues/androidTest/debug
+com.nobroker.myapplication.test.app-mergeDebugAndroidTestResources-3 /Users/nobroker-mac110/AndroidStudioProjects/MyApplication5/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.nobroker.myapplication.test.app-mergeDebugAndroidTestResources-4 /Users/nobroker-mac110/AndroidStudioProjects/MyApplication5/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.nobroker.myapplication.test.app-merged_res-5 /Users/nobroker-mac110/AndroidStudioProjects/MyApplication5/app/build/intermediates/merged_res/debugAndroidTest

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/nobroker-mac110/.gradle/daemon/8.0/com.nobroker.myapplication.app-mergeDebugResources-53:/layout/venue_item.xml",
+        "source": "/Users/nobroker-mac110/.gradle/daemon/8.0/com.nobroker.myapplication.app-main-56:/layout/venue_item.xml"
+    },
+    {
+        "merged": "com.nobroker.myapplication.app-mergeDebugResources-53:/layout/venue_item.xml",
+        "source": "com.nobroker.myapplication.app-main-56:/layout/venue_item.xml"
+    }
+]
