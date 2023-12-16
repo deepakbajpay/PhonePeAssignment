@@ -18,13 +18,13 @@ class DatabaseModule {
 
     @Provides
     @Singleton
-    @Named("chat_db")
+    @Named("venue_db")
     fun provideDbName() = Constants.DB_NAME
 
     @Provides
     @Singleton
     fun provideAppDatabase(
-        @Named("chat_db") dbName: String,
+        @Named("venue_db") dbName: String,
         @ApplicationContext context: Context
     ): AppDatabase {
         return Room.databaseBuilder(context, AppDatabase::class.java, dbName)
