@@ -17,6 +17,9 @@ abstract class BaseViewModel(
     protected var _error: MutableLiveData<String> = MutableLiveData()
     var error: LiveData<String> = _error
 
+    protected var _showLoader: MutableLiveData<Boolean> = MutableLiveData()
+    var showLoader: LiveData<Boolean> = _showLoader
+
     private val handler = CoroutineExceptionHandler { _, exception ->
         handleError(exception, "CoroutineExceptionHandler")
     }

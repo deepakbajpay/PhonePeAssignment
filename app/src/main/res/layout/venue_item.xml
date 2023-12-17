@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="dataItem"
+            type="com.nobroker.myapplication.ui.venues.VenueViewData" />
+    </data>
 
     <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -15,9 +22,10 @@
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/poster_iv"
-                android:layout_width="match_parent"
-                android:background="#555555"
-                android:layout_height="128dp"
+                android:layout_width="64dp"
+                android:background="#4444"
+                setImage="@{dataItem.posterUrl}"
+                android:layout_height="64dp"
                 android:scaleType="centerCrop"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -26,16 +34,19 @@
                 android:id="@+id/textViewName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Venue Name"
+                android:text="@{dataItem.name}"
+                tools:text ="name"
+                android:layout_marginStart="8dp"
                 android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/poster_iv"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/poster_iv" />
+                app:layout_constraintTop_toTopOf="@+id/poster_iv" />
 
             <TextView
                 android:id="@+id/textViewCity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="City"
+                android:text="@{dataItem.city}"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@id/textViewName"
                 app:layout_constraintTop_toBottomOf="@+id/textViewName" />
@@ -44,7 +55,7 @@
                 android:id="@+id/textViewAddress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Address"
+                android:text="@{dataItem.address}"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@id/textViewName"
                 app:layout_constraintTop_toBottomOf="@+id/textViewCity" />

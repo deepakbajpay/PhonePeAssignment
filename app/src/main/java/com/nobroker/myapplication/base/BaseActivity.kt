@@ -14,9 +14,11 @@ abstract class BaseActivity(@LayoutRes private val layout: Int) :
         super.onCreate(savedInstanceState)
         setContentView(layout)
         setupView()
+
     }
 
     abstract fun setupView()
+
 
 
 }

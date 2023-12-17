@@ -70,6 +70,9 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
 
+    annotationProcessor("com.github.bumptech.glide:compiler:4.7.1")
+    implementation("com.github.bumptech.glide:glide:4.14.1")
+
     // Range SeekBar
 //    implementation("com.crystal:crystalrangeseekbar:1.1.3")
 
